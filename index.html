@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamers Event - PUREsportFR</title>
+    <link rel="icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/9292cc38-00e1-4b4c-aadc-464b589f86df-profile_image-70x70.png" type="image/png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
@@ -12,7 +14,6 @@
         body {
             margin: 0;
             padding: 0;
-            /* Dégradé demandé : Noir (gauche) -> Violet (centre) -> Noir (droite) */
             background: linear-gradient(to right, #000000, #260149, #000000);
             color: white;
             font-family: 'Denk One', sans-serif;
@@ -23,7 +24,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            text-align: center; /* Centre tout le contenu globalement */
+            text-align: center;
         }
 
         /* Styles pour la mise en avant (PUREsportFR) */
@@ -35,36 +36,39 @@
         }
 
         .featured-card {
-            transform: scale(1.2); /* Légèrement plus gros pour la mise en avant */
+            transform: scale(1.2);
         }
 
-        /* Styles pour les titres (PRÉSENTIEL / DISTANCIEL) */
+        /* Styles pour les titres */
         .section-title {
             font-family: 'Passion One', cursive;
             font-size: 3rem;
-            margin: 40px 0 30px 0;
+            margin: 50px 0 30px 0; /* Marge augmentée pour bien séparer */
             letter-spacing: 2px;
             text-transform: uppercase;
             color: #fff;
-            /* Effet Néon pour les titres */
             text-shadow: 
                 0 0 5px #fff,
                 0 0 10px #fff,
                 0 0 20px #bc13fe,
                 0 0 40px #bc13fe,
                 0 0 80px #bc13fe;
+            clear: both; /* Force le retour à la ligne */
+            display: block;
+            width: 100%;
         }
 
         /* Grille des streamers */
         .streamer-grid {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Centre les éléments dans la ligne */
+            justify-content: center;
             gap: 30px;
             margin-bottom: 50px;
+            width: 100%;
         }
 
-        /* Carte individuelle d'un streamer */
+        /* Carte individuelle */
         .streamer-card {
             display: flex;
             flex-direction: column;
@@ -90,7 +94,7 @@
             height: 80px;
             border-radius: 50%;
             border: 3px solid #fff;
-            box-shadow: 0 0 10px rgba(188, 19, 254, 0.5); /* Ombre violette */
+            box-shadow: 0 0 10px rgba(188, 19, 254, 0.5);
             object-fit: cover;
             margin-bottom: 10px;
         }
@@ -99,7 +103,6 @@
             font-family: 'Denk One', sans-serif;
             font-size: 1.1rem;
             color: #fff;
-            /* Effet Néon léger pour les noms */
             text-shadow: 
                 0 0 2px #fff,
                 0 0 5px #d400ff;
@@ -194,8 +197,8 @@
                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8e1b8642-45cf-4476-a611-6fb657ae6d18-profile_image-70x70.png" alt="sosolabricots">
                 <span class="streamer-name">sosolabricots</span>
             </a>
-    </div>
-
+        </div>
+    </div> 
     <div class="section-title">DISTANCIEL</div>
 
     <div class="streamer-grid">
