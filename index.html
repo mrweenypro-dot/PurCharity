@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamers Event - PUREsportFR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* Dégradé demandé : Noir (gauche) -> Violet (centre) -> Noir (droite) */
+            background: linear-gradient(to right, #000000, #260149, #000000);
+            color: white;
+            font-family: 'Denk One', sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Centre tout le contenu globalement */
+        }
+
+        /* Styles pour la mise en avant (PUREsportFR) */
+        .featured-section {
+            margin-bottom: 40px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .featured-card {
+            transform: scale(1.2); /* Légèrement plus gros pour la mise en avant */
+        }
+
+        /* Styles pour les titres (PRÉSENTIEL / DISTANCIEL) */
+        .section-title {
+            font-family: 'Passion One', cursive;
+            font-size: 3rem;
+            margin: 40px 0 30px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            /* Effet Néon pour les titres */
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #bc13fe,
+                0 0 40px #bc13fe,
+                0 0 80px #bc13fe;
+        }
+
+        /* Grille des streamers */
+        .streamer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centre les éléments dans la ligne */
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        /* Carte individuelle d'un streamer */
+        .streamer-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+            transition: transform 0.3s ease;
+        }
+
+        .streamer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .streamer-card a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .streamer-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(188, 19, 254, 0.5); /* Ombre violette */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .streamer-name {
+            font-family: 'Denk One', sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+            /* Effet Néon léger pour les noms */
+            text-shadow: 
+                0 0 2px #fff,
+                0 0 5px #d400ff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="featured-section">
+        <div class="streamer-card featured-card">
+            <a href="https://www.twitch.tv/puresportfr" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/9292cc38-00e1-4b4c-aadc-464b589f86df-profile_image-70x70.png" alt="PUREsportFR">
+                <span class="streamer-name">PUREsportFR</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="section-title">PRÉSENTIEL</div>
+
+    <div class="streamer-grid">
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/heklaa_" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e3877ba0-2802-4348-8bef-6009ea03db2f-profile_image-70x70.png" alt="Heklaa_">
+                <span class="streamer-name">Heklaa_</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/nyrvania" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b110bf5c-6118-4a4f-a34b-ca44d19ac226-profile_image-70x70.png" alt="Nyrvania">
+                <span class="streamer-name">Nyrvania</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/eskirio" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/40869e0c-843f-401f-a11c-903b546653bb-profile_image-70x70.jpeg" alt="Eskirio">
+                <span class="streamer-name">Eskirio</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/deesupoff" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/332175f7-91a5-47fc-9d0d-1df9f243c3d7-profile_image-70x70.png" alt="deesupoff">
+                <span class="streamer-name">deesupoff</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/yuumeih" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/9afa0e98-d430-4610-b7f2-ffef5865d39a-profile_image-70x70.png" alt="Yuumeih">
+                <span class="streamer-name">Yuumeih</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/mrdrywiz" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e54b7e72-9984-4f2a-b682-f21ab4d47246-profile_image-70x70.png" alt="MrDrywiz">
+                <span class="streamer-name">MrDrywiz</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/diablotekttv" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/1474d92b-e3e5-4633-aae7-b0fefdde585c-profile_image-70x70.jpeg" alt="diablotekttv">
+                <span class="streamer-name">diablotekttv</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/zecrabedore" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/761c0116-80cd-41b2-939e-9d57c47dffc4-profile_image-70x70.png" alt="zecrabedore">
+                <span class="streamer-name">zecrabedore</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/jualkytv" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/985f4bef-e8ef-48f5-a1dd-27d14b38f31b-profile_image-70x70.png" alt="JualkyTV">
+                <span class="streamer-name">JualkyTV</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/madamepoulpy_" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/6349e7fd-64e4-41ed-904d-f3c606d2cc5f-profile_image-70x70.jpeg" alt="madamepoulpy_">
+                <span class="streamer-name">madamepoulpy_</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/weeny__" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/200665ea-d589-407c-b180-422d467317ed-profile_image-70x70.jpeg" alt="weeny__">
+                <span class="streamer-name">weeny__</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="section-title">DISTANCIEL</div>
+
+    <div class="streamer-grid">
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/bloodfenixtv" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f0d3ee0d-c85d-47f0-a15f-1a3b66024560-profile_image-70x70.png" alt="BloodFenixTV">
+                <span class="streamer-name">BloodFenixTV</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/flygamestars" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e2685015-d61c-4a50-933b-0cacd6540de6-profile_image-70x70.png" alt="flygamestars">
+                <span class="streamer-name">flygamestars</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/maine__lbm" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/1a9da748-1aa8-4253-8eb9-16f44f905d48-profile_image-70x70.jpeg" alt="Maine__lbm">
+                <span class="streamer-name">Maine__lbm</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/jegor_junior" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d3781a28-1ff7-4666-9d6c-ba0522a5f9f7-profile_image-70x70.png" alt="Jegor_Junior">
+                <span class="streamer-name">Jegor_Junior</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/archyball" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d6dc586d-f019-40c3-8229-96e3a9af9835-profile_image-70x70.png" alt="Archyball">
+                <span class="streamer-name">Archyball</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/tarkin_noghall" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/47a3e168-6c0b-48a4-bbe9-d783cbae2be4-profile_image-70x70.png" alt="Tarkin_Noghall">
+                <span class="streamer-name">Tarkin_Noghall</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/matt_nonnn" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/561ac5e6-438a-436f-8aa0-be8d56fff6fb-profile_image-70x70.png" alt="matt_nonnn">
+                <span class="streamer-name">matt_nonnn</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/kawaze" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/04f22655-8220-40ad-bc02-952891a24903-profile_image-70x70.png" alt="Kawaze">
+                <span class="streamer-name">Kawaze</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/elyria205" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b9803197-dfcd-4e64-b3b3-7e0ecf4659ff-profile_image-70x70.jpeg" alt="Elyria205">
+                <span class="streamer-name">Elyria205</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/pyv_shadnir" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c7ba1813-6011-47f2-b767-19942d9f9872-profile_image-70x70.jpeg" alt="PYV_Shadnir">
+                <span class="streamer-name">PYV_Shadnir</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/brennos_tv" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a2bc0679-88cc-4855-bc7b-c38d1cad1f99-profile_image-70x70.png" alt="Brennos_TV">
+                <span class="streamer-name">Brennos_TV</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/yurei_blossom" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/60588d56-557b-428d-b82b-01d0e22d6e2c-profile_image-70x70.png" alt="yurei_blossom">
+                <span class="streamer-name">yurei_blossom</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/mister_max28" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/beb08694-b68f-46d5-8477-d47a261597d8-profile_image-70x70.png" alt="Mister_Max28">
+                <span class="streamer-name">Mister_Max28</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/tariko_san" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/905702f5-e77e-429e-9447-6d81a43176cb-profile_image-70x70.jpeg" alt="tariko_san">
+                <span class="streamer-name">tariko_san</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/isilme__" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e8eb5c71-4540-403d-b44c-f3bd61643f4b-profile_image-70x70.png" alt="isilme__">
+                <span class="streamer-name">isilme__</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/silcose" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/565cdae0-50ab-4aa6-8f2c-792c59a493fd-profile_image-70x70.png" alt="Silcose">
+                <span class="streamer-name">Silcose</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/haceoworld" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/0e0aeba7-00e4-43ae-92b8-d20e6a31f72d-profile_image-70x70.png" alt="haceoworld">
+                <span class="streamer-name">haceoworld</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/chumbac_s" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/aefe1875-18da-4be0-b2c1-5f1cd40cbdc7-profile_image-70x70.jpeg" alt="chumbac_s">
+                <span class="streamer-name">chumbac_s</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/gompubx" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5013e3d8-1a1e-42c8-a266-4255584a501b-profile_image-70x70.png" alt="gompubx">
+                <span class="streamer-name">gompubx</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/kamilliou_" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4446677c-5c24-4277-a051-ee6f5fa87cd9-profile_image-70x70.jpeg" alt="Kamilliou_">
+                <span class="streamer-name">Kamilliou_</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/papa_du_game" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b1a018c2-486f-4906-8b00-712331d3a6f4-profile_image-70x70.png" alt="Papa_du_Game">
+                <span class="streamer-name">Papa_du_Game</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/genki42" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4a2f73b4-1efc-48a9-9095-263d3276e328-profile_image-70x70.png" alt="genki42">
+                <span class="streamer-name">genki42</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/n3_spikey" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d5888945-e41f-4c4e-868e-b2e2e13a1971-profile_image-70x70.png" alt="N3_Spikey">
+                <span class="streamer-name">N3_Spikey</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/pato_pestou" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/73baa504-cd41-4eda-9e8a-bfc9627dd4cf-profile_image-70x70.png" alt="pato_pestou">
+                <span class="streamer-name">pato_pestou</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/lolo_sls" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/27c93e3b-c2b7-4b44-84d7-296b3f58acd5-profile_image-70x70.png" alt="lolo_sls">
+                <span class="streamer-name">lolo_sls</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/keyko_fr" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/713cf36a-3257-4dfb-aee3-640209ea8584-profile_image-70x70.png" alt="keyko_fr">
+                <span class="streamer-name">keyko_fr</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/skyjyy_" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/47c057b9-d442-41cc-bcdd-87e20836f588-profile_image-70x70.png" alt="SkyJyy_">
+                <span class="streamer-name">SkyJyy_</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/eurosfire" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f1e4b117-8d4d-4012-b3d8-a55898645fca-profile_image-70x70.png" alt="Eurosfire">
+                <span class="streamer-name">Eurosfire</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/celmax85" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/51b14ec5-8b0e-4aeb-950b-391bf47fd966-profile_image-70x70.jpeg" alt="celmax85">
+                <span class="streamer-name">celmax85</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/mashiow" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5cf7e530-20f6-45c7-be4d-c923778d38c0-profile_image-70x70.png" alt="Mashiow">
+                <span class="streamer-name">Mashiow</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/pyv_kurt" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/df5b2b64-ef03-4759-9d3d-4092436719e9-profile_image-70x70.png" alt="PYV_Kurt">
+                <span class="streamer-name">PYV_Kurt</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/riivanzebest" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/cf10d4c2-2137-4325-88fc-35d3c2813631-profile_image-70x70.png" alt="RiivanZeBest">
+                <span class="streamer-name">RiivanZeBest</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/cartylevrai" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/48272213-d8a8-4588-972f-7df520d83438-profile_image-70x70.png" alt="CARTYLEVRAI">
+                <span class="streamer-name">CARTYLEVRAI</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/yoking8643" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/034314c0-ba8e-4e1f-8b3b-14a7f7c62f35-profile_image-70x70.png" alt="yoking8643">
+                <span class="streamer-name">yoking8643</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/lusoda" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/92d4115b-1510-4475-af14-45af792946f8-profile_image-70x70.png" alt="Lusoda">
+                <span class="streamer-name">Lusoda</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/epic_scare" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/345d4d01-5b5f-413f-af3a-cfd932a4c52d-profile_image-70x70.png" alt="Epic_Scare">
+                <span class="streamer-name">Epic_Scare</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/gravitypearl" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/2a7e601f-d8a6-4088-b486-a3114a288790-profile_image-70x70.png" alt="gravitypearl">
+                <span class="streamer-name">gravitypearl</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/sosolabricots" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8e1b8642-45cf-4476-a611-6fb657ae6d18-profile_image-70x70.png" alt="sosolabricots">
+                <span class="streamer-name">sosolabricots</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/nolcias_" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/46176b6e-0054-4656-a845-325d414a2dd5-profile_image-70x70.png" alt="Nolcias_">
+                <span class="streamer-name">Nolcias_</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/la_rageuseew/about" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/3c8a08f0-4281-4a22-9308-2d8455310358-profile_image-70x70.png" alt="la_rageuseew">
+                <span class="streamer-name">la_rageuseew</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/keyko_koff" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/162cc23a-da14-4fc9-8fd6-7ca53bdf5ea9-profile_image-70x70.jpeg" alt="keyko_koff">
+                <span class="streamer-name">keyko_koff</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/pierruxxx" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/011bc9d9-935f-4160-b812-ea7e1dba34ec-profile_image-70x70.png" alt="Pierruxxx">
+                <span class="streamer-name">Pierruxxx</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/mel_onlive" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/214ab342-79a2-4961-a412-dab79caa4626-profile_image-70x70.png" alt="mel_onlive">
+                <span class="streamer-name">mel_onlive</span>
+            </a>
+        </div>
+        <div class="streamer-card">
+            <a href="https://www.twitch.tv/ashlofficiel" target="_blank">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/84830c26-7a60-4b7e-b9ba-c2ed0f201e8d-profile_image-70x70.png" alt="ashlofficiel">
+                <span class="streamer-name">ashlofficiel</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
